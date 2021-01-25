@@ -1,11 +1,14 @@
 package com.example.diplomacgpacalculatorkotlin
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -125,20 +128,34 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this,"return",Toast.LENGTH_SHORT);
 
-//            val float_first = string_first.toFloat()
-//            val float_second = string_second.toFloat()
-//            val float_three = string_three.toFloat()
-//            val float_four = string_four.toFloat()
-//            val float_five = string_five.toFloat()
-//            val float_six = string_six.toFloat()
-//            val float_seven = string_seven.toFloat()
-//            val float_eight = string_eight.toFloat()
+            val float_first = string_first.toFloat()
+            val float_second = string_second.toFloat()
+            val float_three = string_three.toFloat()
+            val float_four = string_four.toFloat()
+            val float_five = string_five.toFloat()
+            val float_six = string_six.toFloat()
+            val float_seven = string_seven.toFloat()
+            val float_eight = string_eight.toFloat()
 
 
 
 
         }
 
+
+        resetBtn.setOnClickListener {
+
+            result.setText("Result")
+            first.setText("")
+            second.setText("")
+            three.setText("")
+            four.setText("")
+            five.setText("")
+            six.setText("")
+            seven.setText("")
+            eight.setText("")
+           val totalCgpaAndGrade = null
+        }
 
 
     }
