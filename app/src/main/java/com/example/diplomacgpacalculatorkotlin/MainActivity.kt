@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //button finding
-       val calculateBtn = findViewById<Button>(R.id.calculateButtonId)
-        val  resetbtn = findViewById<Button>(R.id.resetButtonId)
+        val calculateBtn = findViewById<Button>(R.id.calculateButtonId)
+        val  resetBtn = findViewById<Button>(R.id.resetButtonId)
         //layout finding
         val mainLinearLayout = findViewById<LinearLayout>(R.id.mainLayoutId)
         //textViewFinding
@@ -28,6 +28,20 @@ class MainActivity : AppCompatActivity() {
         val six = findViewById<EditText>(R.id.sixthSemesterEditTextId)
         val seven = findViewById<EditText>(R.id.seventhSemesterEditTextId)
         val eight = findViewById<EditText>(R.id.eighthSemesterEditTextId)
+
+        calculateBtn.setOnClickListener {
+            val string_first = first.text.toString()
+            val string_second = second.text.toString()
+            val string_three = three.text.toString()
+            val string_four = four.text.toString()
+            val  string_five = five.text.toString()
+            val string_six = six.text.toString()
+            val string_seven = seven.text.toString()
+            val string_eight = eight.text.toString()
+
+
+
+        }
 
 
 
