@@ -139,6 +139,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
+            val totalCgpaAndGrade = Calculation().result(
+                float_first, float_second, float_three,
+                float_four, float_five, float_six, float_seven, float_eight
+            )
+
+            result.setText(totalCgpaAndGrade)
 
 
         }
