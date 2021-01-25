@@ -1,6 +1,7 @@
 package com.example.diplomacgpacalculatorkotlin
 
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
@@ -39,6 +40,101 @@ class MainActivity : AppCompatActivity() {
             val string_seven = seven.text.toString()
             val string_eight = eight.text.toString()
 
+            if (TextUtils.isEmpty(string_first)) {
+                first.error = "Enter a value"
+                first.requestFocus()
+
+            }
+            if (string_first.toFloat() > 4 || string_first.toFloat() < 2) {
+                first.error = "Should not greater than 2 and less than 4"
+                first.requestFocus()
+
+            }
+
+
+            if (TextUtils.isEmpty(string_second)) {
+                second.error = "Enter a value"
+                second.requestFocus()
+
+            }
+            if (string_second.toFloat() > 4 || string_second.toFloat() < 2) {
+                second.error = "Should not greater than 2 and less than 4"
+                second.requestFocus()
+
+            }
+
+            if (TextUtils.isEmpty(string_three)) {
+                three.error = "Enter a value"
+                three.requestFocus()
+
+            }
+            if (string_three.toFloat() > 4 || string_three.toFloat() < 2) {
+                three.error = "Should not greater than 2 and less than 4"
+                three.requestFocus()
+
+            }
+
+            if (TextUtils.isEmpty(string_four)) {
+                four.error = "Enter a value"
+                four.requestFocus()
+
+            }
+            if (string_four.toFloat() > 4 || string_four.toFloat() < 2) {
+                four.error = "Should not greater than 2 and less than 4"
+                four.requestFocus()
+
+            }
+            if (TextUtils.isEmpty(string_five)) {
+                five.error = "Enter a value"
+                five.requestFocus()
+
+            }
+            if (string_five.toFloat() > 4 || string_five.toFloat() < 2) {
+                five.error = "Should not greater than 2 and less than 4"
+                five.requestFocus()
+
+            }
+            if (TextUtils.isEmpty(string_six)) {
+                six.error = "Enter a value"
+                six.requestFocus()
+
+            }
+            if (string_six.toFloat() > 4 || string_six.toFloat() < 2) {
+                six.error = "Should not greater than 2 and less than 4"
+                six.requestFocus()
+
+            }
+            if (TextUtils.isEmpty(string_seven)) {
+                seven.error = "Enter a value"
+                seven.requestFocus()
+
+            }
+            if (string_seven.toFloat() > 4 || string_seven.toFloat() < 2) {
+                seven.error = "Should not greater than 2 and less than 4"
+                seven.requestFocus()
+
+            }
+            if (TextUtils.isEmpty(string_eight)) {
+                eight.error = "Enter a value"
+                eight.requestFocus()
+
+            }
+            if (string_eight.toFloat() > 4 || string_eight.toFloat() < 2) {
+                eight.error = "Should not greater than 2 and less than 4"
+                eight.requestFocus()
+
+            }
+
+            val float_first = string_first.toFloat()
+            val float_second = string_second.toFloat()
+            val float_three = string_three.toFloat()
+            val float_four = string_four.toFloat()
+            val float_five = string_five.toFloat()
+            val float_six = string_six.toFloat()
+            val float_seven = string_seven.toFloat()
+            val float_eight = string_eight.toFloat()
+
+          
 
 
         }
